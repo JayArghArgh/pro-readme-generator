@@ -1,4 +1,5 @@
-"use strict"; 
+"use strict";
+const OUT_FILENAME = 'exports/README.md';
 
 const inquirer = require('inquirer');
 const fs = require('fs');
@@ -11,5 +12,7 @@ inquirer.prompt([
 	}
 ])
 .then((response) => {
-	console.log(`here is ${response.name}`);
-})
+	fs.writeFile(OUT_FILENAME, `${JSON.stringify(response)}\n`, (err) =>
+		err ? console.error(err) : console.log('File exported')
+	);
+});
