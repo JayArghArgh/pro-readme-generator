@@ -1,0 +1,23 @@
+{
+  "name": "pro-readme-generator",
+  "version": "1.0.0",
+  "description": "Creates a readme file for repositories based on user input.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayArghArgh/pro-readme-generator.git"
+  },
+  "keywords": [],
+  "author": "JayArghArgh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JayArghArgh/pro-readme-generator/issues"
+  },
+  "homepage": "https://github.com/JayArghArgh/pro-readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
