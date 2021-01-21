@@ -19,9 +19,10 @@ inquirer.prompt([
 		name: 'description'
 	},
 	{
-		type: 'input',
+		type: 'confirm',
 		message: 'Do you require a table of contents? ',
-		name: 'toc'
+		name: 'toc',
+		default: true
 	},
 	{
 		type: 'input',

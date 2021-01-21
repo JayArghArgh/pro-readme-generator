@@ -1,3 +1,8 @@
+function table_contents() {
+	const table_of_contents = '\n### Table of Contents\nheya\n\n***';
+	return table_of_contents;
+}
+
 const readmeTemplate = (
 	projectTitle,
 	description,
@@ -9,28 +14,36 @@ const readmeTemplate = (
 	badges,
 	contribute,
 	tests
-) =>
-`# ${projectTitle}
-## Description
+) => {
+	let table_of_contents = '';
+	if (toc) {
+		table_of_contents = table_contents();
+	}
+	let return_template = `# ${projectTitle}
+### Description
 ${description}
-## Table of Contents
-${toc}
-## Installation
+### TOC
+${table_of_contents}
+### Installation
 ${installation}
-## Usage
+### Usage
 ${usage}
-## Credits
+### Credits
 ${credits}
-## License
+### License
 ${license}
-## Badges
+### Badges
 ${badges}
-## Contributing
+### Contributing
 ${contribute}
-## Tests
+### Tests
 ${tests}
 
-> This README.md created with pro-readme-generator by @jayarghargh`;
+> This README.md created with pro-readme-generator by [@jayarghargh](https://github.com/JayArghArgh)`;
+
+	return return_template;
+}
+
 
 module.exports = {
 	readmeTemplate,
