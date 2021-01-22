@@ -1,25 +1,21 @@
-# adsf
+# JR
 ### Description
-adf
+nought
 ### TOC
 
-### Table of Contents
-heya
-
-***
 ### Installation
-adf
+none
 ### Usage
-adf
+dont
 ### Credits
-adf
+jayarghargh
 ### License
-sargh
+GNU Affero General Public License v3.0
 ### Badges
-sfg
+nil
 ### Contributing
-asg
+cannot
 ### Tests
-sgf
+nope
 
 > This README.md created with pro-readme-generator by [@jayarghargh](https://github.com/JayArghArgh)
