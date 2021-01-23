@@ -1,23 +1,11 @@
 "use strict";
 // Setup our globals
 const README_EXPORT = 'exports/README.md';
-const README_TEMPLATE = require('./templates/readme_template');
-const LICENSE_CHOICE = [
-	'None',
-	'Apache License 2.0',
-	'GNU General Public License 2.0',
-	'MIT License',
-	'BSD 2-Clause "Simplified" License',
-	'BSD 3-Clause "New" or "Revised" License',
-	'Boost Software License 1.0',
-	'Creative Commons Zero v1.0 Universal',
-	'Eclipse Public License 2.0',
-	'GNU Affero General Public License v3.0',
-	'GNU General Public License V2.0',
-	'GNU Lesser General Public License v2.1',
-	'Mozilla Public License 2.0',
-	'The Unlicense',
-];
+const README_TEMPLATE = require('./scripts/readme_template');
+const licenseType = require('./scripts/license.js').licenseChoice;
+const badges = require('./scripts/badges.js').badgeChoice;
+
+
 
 const inquirer = require('inquirer');
 const fs = require('fs');
@@ -52,19 +40,20 @@ inquirer.prompt([
 	},
 	{
 		type: 'input',
-		message: 'Insert names of contributors, and their github name: ',
+		message: 'Insert your GitHub username: ',
 		name: 'credits'
 	},
 	{
 		type: 'list',
 		message: 'Please select a license: ',
 		name: 'license',
-		choices: LICENSE_CHOICE,
+		choices: licenseType,
 	},
 	{
-		type: 'input',
+		type: 'checkbox',
 		message: 'Some badges if you will? ',
-		name: 'badges'
+		name: 'badges',
+		choices: badges
 	},
 	{
 		type: 'input',
