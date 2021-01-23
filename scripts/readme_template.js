@@ -1,6 +1,8 @@
-const tableContents = () =>`\n### Table of Contents\nINSERT TOC\n***`;
-const authorCredits = (author) => `[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=${author}&theme=solarized-light)](https://github.com/${author}/github-readme-stats)\n[${author}](https://www.github.com/${author})`
+// Set the user profile generator up and the table of contents.
+const authorCredits = (author) => `[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=${author}&theme=solarized-light)](https://github.com/${author}/github-readme-stats)\n\n[${author}](https://www.github.com/${author})`
 const contentHeadings = require('./headings').createHeading;
+const getBadges = require('./badges').separateBadges;
+const tableContents = ["Description", "Installation", "Usage", "Credits", "License", "Badges", "Contribute", "Tests"];
 
 const readmeTemplate = (
 	projectTitle,
@@ -13,40 +15,26 @@ const readmeTemplate = (
 	contribute,
 	tests
 ) => {
-
-	// Add the credits
-	credits = authorCredits(credits);
-
-	// Add the badges.
-	let splitBadges;
-	let x = 0;
-	for ( x in badges ){
-		console.log(x, "badgey");
-		splitBadges += `${badges[x]} `
-	}
-	badges = splitBadges;
-	const myTOC = contentHeadings(["Description", "Installation", "Usage", "Credits", "License", "Badges", "Contribute", "Tests"])
-
-
+	// Creates a readme from the given parameters.
 	let return_template = `# ${projectTitle}
 ___
 # Contents
-${myTOC}
-# Description
+${contentHeadings(tableContents)}
+# ${tableContents[0]}
 ${description}
-# Installation
+# ${tableContents[1]}
 ${installation}
-# Usage
+# ${tableContents[2]}
 ${usage}
-# Credits
-${credits}
-# License
+# ${tableContents[3]}
+${authorCredits(credits)}
+# ${tableContents[4]}
 ${license}
-# Badges
-${badges}
-# Contributing
+# ${tableContents[5]}
+${getBadges(badges)}
+# ${tableContents[6]}
 ${contribute}
-# Tests
+# ${tableContents[7]}
 ${tests}
 
 > This README.md created with pro-readme-generator by [@jayarghargh](https://github.com/JayArghArgh)\n

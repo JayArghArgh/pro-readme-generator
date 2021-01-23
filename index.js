@@ -66,7 +66,6 @@ inquirer.prompt([
 	for (const item in response){
 		responseArray.push(response[item]);
 	}
-	console.log(responseArray);
 	// Merge the responses with the template.
 	let readme = README_TEMPLATE.readmeTemplate(...responseArray);
 	// Write the readme to the exports file.

@@ -5,11 +5,19 @@ const badgeChoice = [
     '[![CC-0 license](https://img.shields.io/badge/License-CC--0-blue.svg)](https://creativecommons.org/licenses/by-nd/4.0)',
     '[![forthebadge cc-0](http://ForTheBadge.com/images/badges/cc-0.svg)](http://ForTheBadge.com)',
     '[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)',
-    '[![Anurag\'s github stats](https://github-readme-stats.vercel.app/api?username=JayArghArgh&theme=solarized-light)](https://github.com/jayarghargh/github-readme-stats)',
-    '![1](https://github-readme-stats.vercel.app/api/top-langs/?username=JayArghArgh&theme=blue-green)',
-    'https://github.com/Naereen/badges',
-    ]
+];
+
+const separateBadges = (badges) => {
+    // Separates the selected badges and returns them.
+    let badge;
+    let splitBadges = "";
+    for (badge in badges) {
+        splitBadges += `${badges[badge]} `
+    }
+    return splitBadges;
+}
 
 module.exports = {
     badgeChoice,
+    separateBadges,
 };
