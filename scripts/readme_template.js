@@ -27,7 +27,7 @@ ${installation}
 ## ${tableContents[3]}
 ${usage}
 ## ${tableContents[4]}
-${license}
+This application is covered under ${license}.
 ## ${tableContents[5]}
 ${contribute}
 ## ${tableContents[6]}
