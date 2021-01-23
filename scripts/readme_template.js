@@ -1,7 +1,7 @@
 // Set the user profile generator up and the table of contents.
 const contentHeadings = require('./headings').createHeading;
-const getBadges = require('./badges').separateBadges;
 const getCredits = require('./credits');
+const getLicenseBadge = require('./license').getButton;
 const tableContents = ["Description", "Table of Contents", "Installation", "Usage", "License", "Contributing", "Tests", "Questions"];
 
 const readmeTemplate = (
@@ -16,7 +16,7 @@ const readmeTemplate = (
 	tests,
 ) => {
 	// Creates a readme from the given parameters.
-	let return_template = `${getBadges()}
+	let return_template = `${getLicenseBadge(license)}
 # ${projectTitle}
 ## ${tableContents[0]}
 ${description}
