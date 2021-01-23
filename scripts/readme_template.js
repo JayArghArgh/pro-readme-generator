@@ -16,9 +16,8 @@ const readmeTemplate = (
 	tests,
 ) => {
 	// Creates a readme from the given parameters.
-	let return_template = `
+	let return_template = `${getBadges()}
 # ${projectTitle}
-___
 ## ${tableContents[0]}
 ${description}
 ## ${tableContents[1]}
