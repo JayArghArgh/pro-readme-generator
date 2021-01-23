@@ -45,7 +45,7 @@ inquirer.prompt([
 		type: 'list',
 		message: 'Please select a license: ',
 		name: 'license',
-		choices: licenseType,
+		choices: licenseType[0],
 	},
 	{
 		type: 'checkbox',
