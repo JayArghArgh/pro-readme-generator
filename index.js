@@ -2,13 +2,12 @@
 // Setup our globals
 const README_EXPORT = 'exports/README.md';
 const README_TEMPLATE = require('./scripts/readme_template');
-const licenseType = require('./scripts/license.js').licenseChoice;
-const badges = require('./scripts/badges.js').badgeChoice;
-
-
-
+// Required for execution
 const inquirer = require('inquirer');
 const fs = require('fs');
+// Required for questions
+const licenseType = require('./scripts/license.js').licenseChoice;
+const badges = require('./scripts/badges.js').badgeChoice;
 
 // Question the user.
 inquirer.prompt([
@@ -70,6 +69,7 @@ inquirer.prompt([
 	console.log(responseArray);
 	// Merge the responses with the template.
 	let readme = README_TEMPLATE.readmeTemplate(...responseArray);
+	// Write the readme to the exports file.
 	fs.writeFile(README_EXPORT, readme, (err) =>
 		err ? console.error(err) : console.log('File exported')
 	);

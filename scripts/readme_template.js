@@ -29,6 +29,8 @@ const readmeTemplate = (
 
 
 	let return_template = `# ${projectTitle}
+___
+# Contents
 ${myTOC}
 # Description
 ${description}
@@ -47,8 +49,8 @@ ${contribute}
 # Tests
 ${tests}
 
-> This README.md created with pro-readme-generator by [@jayarghargh](https://github.com/JayArghArgh)
-> [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
+> This README.md created with pro-readme-generator by [@jayarghargh](https://github.com/JayArghArgh)\n
+[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
 
 `;
 
