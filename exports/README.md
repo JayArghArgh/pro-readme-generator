@@ -1,27 +1,27 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 # Pro Readme Generator
 ## Description
-Creates a readme.md file based on user input.
+Creates readme file from user input. Built using JavaScript and npm inquirer.
 ## Table of Contents
-> - [Description](##Description)
-> - [Table of Contents](##Table of Contents)
-> - [Installation](##Installation)
-> - [Usage](##Usage)
-> - [License](##License)
-> - [Contributing](##Contributing)
-> - [Tests](##Tests)
-> - [Questions](##Questions)
+> - [Description](#Description)
+> - [Table of Contents](#Table of Contents)
+> - [Installation](#Installation)
+> - [Usage](#Usage)
+> - [License](#License)
+> - [Contributing](#Contributing)
+> - [Tests](#Tests)
+> - [Questions](#Questions)
 
 ## Installation
-`node i`
+run `node i`
 ## Usage
-`node index.js`
+run `node index.js`
 ## License
-The MIT License
+The Unlicense
 ## Contributing
-Please report bugs. If you can fix them, fork n fix :)
+Either fork and fix, or use the email below to report all bugs. Thanks.
 ## Tests
-No tests developed at this stage. (23/01/2021)
+No tests developed as at 23/01/2021
 ## Questions
 Please refer any questions to [![author](https://img.shields.io/badge/Dev-JayArghArgh-yellow)](https://img.shields.io/badge/Dev-JayArghArgh-yellow) via jayarghargh@gmail.com.
 

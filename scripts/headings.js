@@ -4,7 +4,8 @@ const createHeading = (headings) => {
     let returnHeading = "";
     // Loop through and format headings.
     for (heading in headings) {
-        returnHeading += `> - [${headings[heading]}](##${headings[heading]})\n`;
+        heading = heading.split(' ').join('%20;');
+        returnHeading += `> - [${headings[heading]}](#${headings[heading]})\n`;
     }
     return returnHeading;
 }
