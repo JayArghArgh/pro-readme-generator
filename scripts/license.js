@@ -1,6 +1,6 @@
 // Contains licenses and their respective badges
 const licenseChoice = {
-    "None": "[![None :)](https://img.shields.io/badge/Dev-None-&#58;&#41;-yellow)](https://img.shields.io/badge/Dev-&#58;&#41;-yellow)",
+    "None": "[![None :)](https://img.shields.io/badge/License-None-&#58&#41-yellow)](https://img.shields.io/badge/License-&#58&#41-yellow)",
     'Apache License 2.0':
         "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)]",
     "Boost Software License 1.0":

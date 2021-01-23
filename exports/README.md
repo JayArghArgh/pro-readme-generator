@@ -1,4 +1,4 @@
-[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+[![None :)](https://img.shields.io/badge/License-None-&#58&#41-yellow)](https://img.shields.io/badge/License-&#58&#41-yellow)
 # Pro Readme Generator
 ## Description
 Creates readme file from user input. Built using JavaScript and npm inquirer.
@@ -17,7 +17,7 @@ run `node i`
 ## Usage
 run `node index.js`
 ## License
-The Unlicense
+This application is covered under None.
 ## Contributing
 Either fork and fix, or use the email below to report all bugs. Thanks.
 ## Tests
