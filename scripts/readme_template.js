@@ -37,9 +37,12 @@ ${contribute}
 # ${tableContents[7]}
 ${tests}
 
-> This README.md created with pro-readme-generator by [@jayarghargh](https://github.com/JayArghArgh)\n
+
+> This README.md created with pro-readme-generator
+
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
 
+[![JayArghArgh](https://img.shields.io/badge/Dev-JayArghArgh-yellow)](https://img.shields.io/badge/Dev-JayArghArgh-yellow)
 `;
 
 	return return_template;

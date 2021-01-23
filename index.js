@@ -73,7 +73,7 @@ inquirer.prompt([
 		err ? console.error(err) : console.log('File exported')
 	);
 });
-
+// TODO ensure categories ===  Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 // TODO Add Questions category
 // TODO ensure Title is formatted correctly
 // TODO Badges! WHEN I choose a license for my application from a list of options
