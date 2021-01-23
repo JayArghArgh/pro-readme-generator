@@ -6,7 +6,7 @@ const README_TEMPLATE = require('./scripts/readme_template');
 const inquirer = require('inquirer');
 const fs = require('fs');
 // Required for questions
-const licenseType = require('./scripts/license.js').licenseChoice;
+const licenseType = require('./scripts/license.js').getLicense;
 const badges = require('./scripts/badges.js').badgeChoice;
 
 // Question the user.
@@ -45,13 +45,7 @@ inquirer.prompt([
 		type: 'list',
 		message: 'Please select a license: ',
 		name: 'license',
-		choices: licenseType[0],
-	},
-	{
-		type: 'checkbox',
-		message: 'Some badges if you will? ',
-		name: 'badges',
-		choices: badges
+		choices: licenseType,
 	},
 	{
 		type: 'input',

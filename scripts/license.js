@@ -31,9 +31,6 @@ const getLicense = () => {
 
 const getButton = (myButton) => licenseChoice[myButton];
 
-console.log(getButton("GNU GPL v3"));
-// const getLicences
-
 module.exports = {
     getLicense,
     getButton,
