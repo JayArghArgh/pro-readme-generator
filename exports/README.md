@@ -4,7 +4,7 @@
 Creates readme file from user input. Built using JavaScript and npm inquirer.
 ## Table of Contents
 > - [Description](#Description)
-> - [Table of Contents](#Table of Contents)
+> - [Table%20of%20Contents](#Table%20of%20Contents)
 > - [Installation](#Installation)
 > - [Usage](#Usage)
 > - [License](#License)
