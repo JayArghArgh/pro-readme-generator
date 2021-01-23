@@ -1,8 +1,8 @@
 // Set the user profile generator up and the table of contents.
-const authorCredits = (author) => `[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=${author}&theme=solarized-light)](https://github.com/${author}/github-readme-stats)\n\n[${author}](https://www.github.com/${author})`
 const contentHeadings = require('./headings').createHeading;
 const getBadges = require('./badges').separateBadges;
-const tableContents = ["Description", "Installation", "Usage", "Credits", "License", "Badges", "Contribute", "Tests"];
+const getCredits = require('./credits');
+const tableContents = ["Description", "Table of Contents", "Installation", "Usage", "License", "Contributing", "Tests", "Questions"];
 
 const readmeTemplate = (
 	projectTitle,
@@ -10,39 +10,36 @@ const readmeTemplate = (
 	installation,
 	usage,
 	credits,
+	email,
 	license,
-	badges,
 	contribute,
-	tests
+	tests,
 ) => {
 	// Creates a readme from the given parameters.
-	let return_template = `# ${projectTitle}
+	let return_template = `
+# ${projectTitle}
 ___
-# Contents
-${contentHeadings(tableContents)}
-# ${tableContents[0]}
+## ${tableContents[0]}
 ${description}
-# ${tableContents[1]}
+## ${tableContents[1]}
+${contentHeadings(tableContents)}
+## ${tableContents[2]}
 ${installation}
-# ${tableContents[2]}
+## ${tableContents[3]}
 ${usage}
-# ${tableContents[3]}
-${authorCredits(credits)}
-# ${tableContents[4]}
+## ${tableContents[4]}
 ${license}
-# ${tableContents[5]}
-${getBadges(badges)}
-# ${tableContents[6]}
+## ${tableContents[5]}
 ${contribute}
-# ${tableContents[7]}
+## ${tableContents[6]}
 ${tests}
+## ${tableContents[7]}
+Please refer any questions to ${getCredits.authorButton(credits)} via ${email}.\n
+${getCredits.authorProfile(credits)}
 
 
-> This README.md created with pro-readme-generator
+> ${getCredits.authorButton('JayArghArgh')} This README.md created with pro-readme-generator.
 
-[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
-
-[![JayArghArgh](https://img.shields.io/badge/Dev-JayArghArgh-yellow)](https://img.shields.io/badge/Dev-JayArghArgh-yellow)
 `;
 
 	return return_template;
