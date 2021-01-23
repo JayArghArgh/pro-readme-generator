@@ -23,12 +23,6 @@ inquirer.prompt([
 		name: 'description'
 	},
 	{
-		type: 'confirm',
-		message: 'Do you require a table of contents? ',
-		name: 'toc',
-		default: true
-	},
-	{
 		type: 'input',
 		message: 'Installation instructions: ',
 		name: 'installation'

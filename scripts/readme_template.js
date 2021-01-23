@@ -1,10 +1,10 @@
 const tableContents = () =>`\n### Table of Contents\nINSERT TOC\n***`;
 const authorCredits = (author) => `[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=${author}&theme=solarized-light)](https://github.com/${author}/github-readme-stats)\n[${author}](https://www.github.com/${author})`
+const contentHeadings = require('./headings').createHeading;
 
 const readmeTemplate = (
 	projectTitle,
 	description,
-	toc,
 	installation,
 	usage,
 	credits,
@@ -13,11 +13,6 @@ const readmeTemplate = (
 	contribute,
 	tests
 ) => {
-
-	// Line up the Table of Contents/
-	if (toc) {
-		toc = tableContents();
-	}
 
 	// Add the credits
 	credits = authorCredits(credits);
@@ -30,25 +25,26 @@ const readmeTemplate = (
 		splitBadges += `${badges[x]} `
 	}
 	badges = splitBadges;
+	const myTOC = contentHeadings(["Description", "Installation", "Usage", "Credits", "License", "Badges", "Contribute", "Tests"])
+
 
 	let return_template = `# ${projectTitle}
-### Description
+${myTOC}
+# Description
 ${description}
-### TOC
-${toc}
-### Installation
+# Installation
 ${installation}
-### Usage
+# Usage
 ${usage}
-### Credits
+# Credits
 ${credits}
-### License
+# License
 ${license}
-### Badges
+# Badges
 ${badges}
-### Contributing
+# Contributing
 ${contribute}
-### Tests
+# Tests
 ${tests}
 
 > This README.md created with pro-readme-generator by [@jayarghargh](https://github.com/JayArghArgh)
