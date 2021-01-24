@@ -2,6 +2,8 @@
 # Pro Readme Generator
 ## Description
 Creates readme file from user input. Built using JavaScript and npm inquirer.
+[Watch the video](./exports/Pro-Readme-Generator.mp4).
+
 ## Table of Contents
 > - [Description](#Description)
 > - [Table of Contents](#Table%20of%20Contents)
@@ -28,5 +30,4 @@ Please refer any questions to [![JayArghArgh](https://img.shields.io/badge/Dev-J
 [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=JayArghArgh&theme=solarized-light)](https://github.com/JayArghArgh/github-readme-stats)
 
 
-> [![JayArghArgh](https://img.shields.io/badge/Dev-JayArghArgh-yellow)](https://github.com/JayArghArgh) This README.md created with [![repo](https://img.shields.io/badge/Git-ProReadMe-green)](https://github.com/JayArghArgh/pro-readme-generator).
-
+> [![JayArghArgh](https://img.shields.io/badge/Dev-JayArghArgh-yellow)](https://github.com/JayArghArgh) This README.md created with [![repo](https://img.shields.io/badge/Git-ProReadMe-green)](https://github.com/JayArghArgh/pro-readme-generator)
