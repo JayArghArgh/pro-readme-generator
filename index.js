@@ -7,7 +7,6 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 // Required for questions
 const licenseType = require('./scripts/license.js').getLicense;
-const badges = require('./scripts/badges.js').badgeChoice;
 
 // Question the user.
 inquirer.prompt([
@@ -28,7 +27,7 @@ inquirer.prompt([
 	},
 	{
 		type: 'input',
-		message: 'Usage Instructions',
+		message: 'Usage Instructions:',
 		name: 'usage'
 	},
 	{
@@ -38,7 +37,7 @@ inquirer.prompt([
 	},
 	{
 		type: 'input',
-		message: 'Please add a contact email',
+		message: 'Please add a contact email:',
 		name: 'email'
 	},
 	{
@@ -54,7 +53,7 @@ inquirer.prompt([
 	},
 	{
 		type: 'input',
-		message: 'Got any tests? ',
+		message: 'Define tests: ',
 		name: 'tests'
 	},
 

@@ -37,7 +37,7 @@ Please refer any questions to ${getCredits.authorButton(credits)} via ${email}.\
 ${getCredits.authorProfile(credits)}
 
 
-> ${getCredits.authorButton('JayArghArgh')} This README.md created with pro-readme-generator.
+> ${getCredits.authorButton('JayArghArgh')} This README.md created with [![repo](https://img.shields.io/badge/Git-ProReadMe-green)](https://github.com/JayArghArgh/pro-readme-generator).
 
 `;
 
