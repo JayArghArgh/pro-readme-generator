@@ -2,7 +2,7 @@
 # Pro Readme Generator
 ## Description
 Creates readme file from user input. Built using JavaScript and npm inquirer.
-[Watch the video](./exports/Pro-Readme-Generator.mp4).
+[Watch the video](https://youtu.be/JXe_lXDuHHI).
 ## Table of Contents
 > - [Description](#Description)
 > - [Table of Contents](#Table%20of%20Contents)
