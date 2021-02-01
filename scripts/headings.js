@@ -4,7 +4,7 @@ const createHeading = (headings) => {
     let returnHeading = "";
     // Loop through and format heading urls to remove spaces.
     for (heading in headings) {
-        let urlString = headings[heading].split(" ").join('%20');
+        let urlString = headings[heading].split(" ").join('-');
         returnHeading += `> - [${headings[heading]}](#${urlString})\n`;
     }
     return returnHeading;
